@@ -95,6 +95,6 @@ function ExampleUsage(File::String="Example.tfw")
     Writetfw(File, N, EnvelopeFlag=true)
 end
 
-export Writetfw, ExampleUsage
+export Writetfw, ExampleUsage, NormalVector
 
 end # module
