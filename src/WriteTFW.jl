@@ -70,9 +70,7 @@ end
 
 function Writetfw(Target::String, DacValues::Vector{<:Integer}; EnvelopeFlag::Bool=true)
     D = convert(Vector{UInt16}, DacValues .& 0x3fff)
-    @show D
     Samples = length(D)
-    Samples = 1200
 
     Header = PackHeader(Samples, 1)
     if EnvelopeFlag
