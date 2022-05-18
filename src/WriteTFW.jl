@@ -1,6 +1,6 @@
 module WriteTFW
 
-function VectorSplit(TargetVector::Vector{<:Any}, N::Int64)
+function VectorSplit(TargetVector::Vector{<:Real}, N::Int64)
     L1 = length(TargetVector)
     L2 = trunc(Int64, L1 / N)
     X = L1 - N * L2
@@ -84,7 +84,7 @@ function Writetfw(Target::String, DacValues::Vector{<:Integer}; EnvelopeFlag::Bo
     close(File)
 end
 
-function ExampleUsage(File::String="Example.tfw")
+function ExampleUsage(;File::String="Example.tfw")
     Samples = 1199
     Cycles = 84
     T = range(0, Samples)
