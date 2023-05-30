@@ -2,3 +2,6 @@ name = "WriteTFW"
 uuid = "49d7a207-2b26-4c4c-b0e9-253fdb5aa2df"
 authors = ["mrs504aa <mrs504aa@hotmail.com>"]
 version = "0.1.1"
+
+[compat]
+julia = "^1.7"
